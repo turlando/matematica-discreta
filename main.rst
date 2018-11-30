@@ -26,7 +26,7 @@ Notazione logica
     * Congiunzione (:math:`\land`)
     * Disgiunzione (:math:`\lor`)
 
-Dichiarazione
+Enunciazione
     Gli insiemi si possono dichiarare o descrivere mediante:
 
     * Elencazione (:math:`A = \{a, b, c\}`)
@@ -98,19 +98,19 @@ Confronto
     * :math:`A \subset B`
     * :math:`B \subset A`
 
-    Esempi:
+Esempi sul confronto di insiemi:
 
-    * :math:`N \subset Z \subset Q` quindi :math:`N, Z, Q` sono confrontabili
-    * :math:`A = \{a, 2, 3\}, B = \{1, a, b\}, C = \{1, 2\}, D = \{a, b\}`
+* :math:`N \subset Z \subset Q` quindi :math:`N, Z, Q` sono confrontabili
+* :math:`A = \{a, 2, 3\}, B = \{1, a, b\}, C = \{1, 2\}, D = \{a, b\}`
 
-      * :math:`A \neq B, A \not\subset B, B \not\subset A`
-        quindi :math:`A, B` non sono confrontabili
-      * :math:`A \neq C, A \not\subset C, C \subset A`
-        quindi :math:`A, C` sono confrontabili
-      * :math:`B \neq D, B \not\subset D, D \subset B`
-        quindi :math:`B, D` sono confrontabili
-      * :math:`C \neq D, C \not\subset D, D \not\subset C`
-        quindi :math:`C, D` non sono confrontabili
+  * :math:`A \neq B, A \not\subset B, B \not\subset A`
+    quindi :math:`A, B` non sono confrontabili
+  * :math:`A \neq C, A \not\subset C, C \subset A`
+    quindi :math:`A, C` sono confrontabili
+  * :math:`B \neq D, B \not\subset D, D \subset B`
+    quindi :math:`B, D` sono confrontabili
+  * :math:`C \neq D, C \not\subset D, D \not\subset C`
+    quindi :math:`C, D` non sono confrontabili
 
 Cardinalià o potenza
     È il numero di elementi di un insieme e si indica con :math:`|A|`.
@@ -144,6 +144,12 @@ Cardinalià o potenza
       esiste uno in :math:`B` e viceversa), si può dire che
       :math:`|A| = |N| = \aleph_{0}`.
 
+Esempi:
+
+* Insiemi equipotenti sono numerabili?
+
+   :math:`A = \{1, 2, 3\}, B = \{4, 5, 6\}`
+
 Insieme numerabile
     Un insieme A si dice numerabile se si verifica uno dei seguenti casi:
 
@@ -160,20 +166,20 @@ Insieme delle parti
     * :math:`\mathcal{P}(A) = \{X : X \subseteq A\}`
     * :math:`X \subseteq A \iff X \in \mathcal{P}(A)`
 
-    Esempi:
+Esempi di insieme delle parti:
 
-    * | :math:`A = \varnothing, \mathcal{P}(A) = \{\varnothing\}`
-      | :math:`\varnothing \subseteq A, \varnothing \subset \mathcal{P}(A),
-        \varnothing \in \mathcal{P}(A)`
-      | Quindi :math:`|A| = 0`, ma :math:`|\mathcal{P}(A)| = 1`.
-    * | :math:`A = \{1\}, \mathcal{P}(A) = \{\varnothing, A\}
-        = \{\varnothing, \{1\}\}`
-      | Quindi :math:`|A| = 1`, ma :math:`|\mathcal{P}(A)| = 2`.
-    * | :math:`A = \{1, 2\}, \mathcal{P}(A) = \{\varnothing, A, \{1\}, \{2\}\}`
-      | Quindi :math:`|A| = 2`, ma :math:`|\mathcal{P}(A)| = 4`.
-    * | :math:`A = \{1, 2, 3\}, \mathcal{P}(A) = \{\varnothing, A,
-        \{1\}, \{2\}, \{3\}, \{1, 2\}, \{1, 3\}, \{2, 3\}\}`
-      | Quindi :math:`|A| = 2`, ma :math:`|\mathcal{P}(A)| = 4`.
+* | :math:`A = \varnothing, \mathcal{P}(A) = \{\varnothing\}`
+  | :math:`\varnothing \subseteq A, \varnothing \subset \mathcal{P}(A),
+    \varnothing \in \mathcal{P}(A)`
+  | Quindi :math:`|A| = 0`, ma :math:`|\mathcal{P}(A)| = 1`.
+* | :math:`A = \{1\}, \mathcal{P}(A) = \{\varnothing, A\}
+    = \{\varnothing, \{1\}\}`
+  | Quindi :math:`|A| = 1`, ma :math:`|\mathcal{P}(A)| = 2`.
+* | :math:`A = \{1, 2\}, \mathcal{P}(A) = \{\varnothing, A, \{1\}, \{2\}\}`
+  | Quindi :math:`|A| = 2`, ma :math:`|\mathcal{P}(A)| = 4`.
+* | :math:`A = \{1, 2, 3\}, \mathcal{P}(A) = \{\varnothing, A,
+    \{1\}, \{2\}, \{3\}, \{1, 2\}, \{1, 3\}, \{2, 3\}\}`
+  | Quindi :math:`|A| = 2`, ma :math:`|\mathcal{P}(A)| = 4`.
 
 Primo teorema di Cantor
     :math:`|\mathcal{P}(A)| = 2^{|A|}, \forall A`
@@ -187,6 +193,100 @@ Primo teorema di Cantor
 Secondo teorema di Cantor
     :math:`|A| < |\mathcal{P}(A)|`
 
+    | Se :math:`A` è finito allora :math:`|A| = k,`
+    | :math:`|A| < |\mathcal{P}(A)| = 2^{|A|}`,
+    | quindi :math:`n < 2^{n}, \forall k \in N`.
+
+    | Se :math:`A` è infinito allora :math:`|A| = |N| = \aleph_{0}`,
+    | :math:`\aleph_{0} < 2^{\aleph_{0}} = |\mathcal{P}(A)| = \aleph_{1} = c = |R|`.
+
+    .. math::
+
+      |N| &< \, |\mathcal{P}(N)| &< \, |\mathcal{P}(\mathcal{P}(N))|
+      &< \, |\mathcal{P}(\mathcal{P}(\mathcal{P}(N)))| &< \dots \\
+      \aleph_{0} &< \, 2^{\aleph_{0}} = \aleph_{1} &< \, 2^{\aleph_{1}} = \aleph_{2}
+      &< \, 2^{\aleph_{2}} = \aleph_{3} &< \dots
+
+    Esistono infinite infinità distinte.
+
+Operazioni tra insiemi
+    Lorem ipsum
+
+Prodotto cartesiano
+    Lorem ipsum
+
+Relazione
+    Lorem ipsum
+
+Notazioni compatte
+    Lorem ipsum
+
+Principio di inclusione-esclusione
+    Lorem ipsum
+
+Partizione di un insieme
+    È una famiglia :math:`F` di sottoinsiemi di A.
+    :math:`F = \{A_{i}\}_{i \in I}` tale che:
+
+    * :math:`A_i \neq \varnothing, \forall i \in I`
+    * Se :math:`i \neq j` allora :math:`A_{i} \cap A_{j} = \varnothing`
+    * :math:`\bigcup\limits_{i \in I} A_{i} = A`
+
+    :math:`A_{i}` sono le **parti** della partizione.
+
+    Dato un insieme :math:`A`, :math:`\mathcal{P}(A)` non è una partizione
+    di :math:`A`.
+
+    Le partizioni di un insieme sono tante quante le possibili relazioni di
+    equivalenza che si possono definire sull'insieme.
+
+Esempi sulla partizione di insiemi:
+
+* Si determinino tutte le partizioni di :math:`A = \{1, 2, 3\}`
+
+  * :math:`F_{1} = \{1, 2, 3\}`
+  * :math:`F_{2} = \{\{1\}, \{2\}, \{3\}\}`
+  * :math:`F_{3} = \{\{1, 2\}, \{3\}\}`
+  * :math:`F_{4} = \{\{1, 3\}, \{2\}\}`
+  * :math:`F_{5} = \{\{2, 3\}, \{1\}\}`
+
+* Dati :math:`P = \{2n : n \in N\}, \; D = \{2n + 1 : n \in N\}`,
+  :math:`F = \{P, D\}` è una partizione di N?
+
+   * :math:`A_{1} = P \neq \varnothing, \; A_{2} = D \neq \varnothing`
+   * :math:`(i = 1 \in D) \neq (j = 2 \in P)
+     \implies A_{1} \cap A_{2} = P \cap D = \varnothing`
+   * :math:`A_{1} \cup A_{2} = P \cup D = N`
+
+   Quindi :math:`F` è una partizione.
+
+Calcolo combinatorio
+--------------------
+
+Fattoriale
+    Si indica con :math:`n!` ed è il prodotto di tutti i numeri naturali
+    minori o uguali a :math:`n` escluso lo zero.
+
+    :math:`n! = n \times (n - 1) \times (n - 2) \times \dots \times 2 \times 1`
+
+    Si pone per convenzione :math:`0! = 1`.
+
+    Il fattoriale è definito solo per i numeri naturali.
+
+Coefficiente binomiale
+    Si indica con :math:`\binom{n}{k}`.
+
+    * :math:`0 \leq n < k \iff \binom{n}{k} = 0`
+    * :math:`0 \leq k \leq n \iff \binom{n}{k} = \frac{n!}{k!(n - k)!}`
+
+Combinazione
+    Lorem ipsum
+
+Formula di Stifel
+    Lorem ipsum
+
+Numeri di Bell
+    Lorem ipsum
 
 Principipo di induzione
 -----------------------
