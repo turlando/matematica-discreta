@@ -20,6 +20,7 @@ main.html: main.rst
 	$(PANDOC)\
 	    --standalone\
 	    --to=html5\
+	    --section-divs\
 	    --toc\
 	    --mathml\
 	    -o$@ $<
@@ -27,3 +28,4 @@ main.html: main.rst
 .PHONY: clean
 clean:
 	rm -f main.pdf
+	rm -f main.html
