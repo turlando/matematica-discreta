@@ -4,9 +4,6 @@ Matematica Discreta
 Insiemistica
 ------------
 
-Il concetto di insieme è primitivo, nel senso di intuitivo e non è necessario
-ricorrere ad altri concetti per definirlo.
-
 Insieme
     È una raccolta di oggetti ben definiti che costituiscono gli elementi
     dell'insieme.
@@ -107,7 +104,7 @@ Confronto
     * :math:`A = \{a, 2, 3\}, B = \{1, a, b\}, C = \{1, 2\}, D = \{a, b\}`
 
       * :math:`A \neq B, A \not\subset B, B \not\subset A`
-        quindi :math`A, V` non sono confrontabili
+        quindi :math:`A, B` non sono confrontabili
       * :math:`A \neq C, A \not\subset C, C \subset A`
         quindi :math:`A, C` sono confrontabili
       * :math:`B \neq D, B \not\subset D, D \subset B`
@@ -115,6 +112,88 @@ Confronto
       * :math:`C \neq D, C \not\subset D, D \not\subset C`
         quindi :math:`C, D` non sono confrontabili
 
+Cardinalià o potenza
+    È il numero di elementi di un insieme e si indica con :math:`|A|`.
+    Due insiemi si dicono **equipotenti** se hanno la stessa cardinalità.
+
+    Esempi:
+
+    * :math:`|\varnothing| = 0, |\{1\}| = 1, |\{1, 2\}| = 2`
+    * :math:`|\mathbb{N}| = |\mathbb{Z}| = |\mathbb{Q}| = \aleph_{0},
+      |\mathbb{R}| = \aleph_{1} = c`
+
+    :math:`\aleph` è la prima lettera dell'alfabeto ebraico (*aleph*).
+
+    La cardinalità degli insiemi infiniti si indica con i **numeri cardinali
+    transfiniti**, dei quali :math:`\aleph_{0}` è il primo. Si dice perciò
+    che :math:`|\mathbb{N}|` ha l'infinità più piccola.
+
+    :math:`c` indica la potenza del continuo ed è la cardinalità dei numeri reali
+    Infatti :math:`|\mathbb{N}| < |\mathbb{R}| \iff \aleph_{0} < c`.
+
+    Se :math:`A, B` sono insiemi finiti allora
+    :math:`A \subset B \iff |A| \neq |B|`.
+    Non vale per insiemi infiniti. Ecco un esempio:
+
+      | :math:`N = \{0, 1, 2, 3, \dots, n, \dots\}`
+      | :math:`A = \{0, 2, 4, 6, \dots, 2n, \dots\}`
+      | :math:`A \subset N`
+
+      Dato che si può stabilire una relazione biunivoca tra gli elementi di
+      :math:`A, B` (cioè che per ogni elemento presente in :math:`A` ne
+      esiste uno in :math:`B` e viceversa), si può dire che
+      :math:`|A| = |N| = \aleph_{0}`.
+
+Insieme numerabile
+    Un insieme A si dice numerabile se si verifica uno dei seguenti casi:
+
+    * Se :math:`A` è finito allora :math:`A \subset N, |A| = k`
+    * Se :math:`A` è infinito allora :math:`A \subseteq N, |A| = \aleph_{0}`
+      oppure se gli elementi di :math:`A` possono essere messi in corrispondenza
+      biunivoca con gli elementi di :math:`\mathbb{N}`.
+
+Insieme delle parti
+    Dato un insieme :math:`A` si indica con :math:`\mathcal{P}(A)` il proprio
+    insieme delle parti ed è l'insieme di tutti i possibili sottoinsiemi di
+    :math:`A`.
+
+    * :math:`\mathcal{P}(A) = \{X : X \subseteq A\}`
+    * :math:`X \subseteq A \iff X \in \mathcal{P}(A)`
+
+    Esempi:
+
+    * | :math:`A = \varnothing, \mathcal{P}(A) = \{\varnothing\}`
+      | :math:`\varnothing \subseteq A, \varnothing \subset \mathcal{P}(A),
+        \varnothing \in \mathcal{P}(A)`
+      | Quindi :math:`|A| = 0`, ma :math:`|\mathcal{P}(A)| = 1`.
+    * | :math:`A = \{1\}, \mathcal{P}(A) = \{\varnothing, A\}
+        = \{\varnothing, \{1\}\}`
+      | Quindi :math:`|A| = 1`, ma :math:`|\mathcal{P}(A)| = 2`.
+    * | :math:`A = \{1, 2\}, \mathcal{P}(A) = \{\varnothing, A, \{1\}, \{2\}\}`
+      | Quindi :math:`|A| = 2`, ma :math:`|\mathcal{P}(A)| = 4`.
+    * | :math:`A = \{1, 2, 3\}, \mathcal{P}(A) = \{\varnothing, A,
+        \{1\}, \{2\}, \{3\}, \{1, 2\}, \{1, 3\}, \{2, 3\}\}`
+      | Quindi :math:`|A| = 2`, ma :math:`|\mathcal{P}(A)| = 4`.
+
+Primo teorema di Cantor
+    :math:`|\mathcal{P}(A)| = 2^{|A|}, \forall A`
+
+    Se :math:`A` è finito, :math:`|A| = k, |\mathcal{P}(A)| = 2^{|A|} = 2^{k}`.
+
+    | Se :math:`A` è infinito e numerabile,
+    | :math:`|A| = |N| = \aleph_{0}`,
+    | :math:`|\mathcal{P}(A)| = 2^{|A|} = 2^{\aleph_{0}} = \aleph_{1} = c = |R|`.
+
+Secondo teorema di Cantor
+    :math:`|A| < |\mathcal{P}(A)|`
+
+
+Principipo di induzione
+-----------------------
+
+Lorem ipsum.
+
 Aritmetica modulare
 -------------------
+
 Lorem ipsum.
