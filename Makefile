@@ -11,7 +11,8 @@ main.pdf: main.rst
 	$(PANDOC)\
 	    --standalone\
 	    --toc\
-	    --variable documentclass:book\
+	    --number-sections\
+	    --variable documentclass:memoir\
 	    --variable papersize:a4\
 	    --variable lang:it\
 	    -o $@ $<
