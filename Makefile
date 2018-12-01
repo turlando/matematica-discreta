@@ -1,10 +1,10 @@
 PANDOC?=pandoc
 
 .PHONY: all
-all: lint-main.rst main.pdf main.html
+all: main.pdf main.html
 
-.PHONY: lint-main.rst
-lint-main.rst: main.rst
+.PHONY: lint
+lint: main.rst
 	rst-lint $<
 
 main.pdf: main.rst
@@ -14,7 +14,7 @@ main.pdf: main.rst
 	    --variable documentclass:book\
 	    --variable papersize:a4\
 	    --variable lang:it\
-	    -o$@ $<
+	    -o $@ $<
 
 main.html: main.rst
 	$(PANDOC)\
@@ -23,7 +23,7 @@ main.html: main.rst
 	    --section-divs\
 	    --toc\
 	    --mathml\
-	    -o$@ $<
+	    -o $@ $<
 
 .PHONY: clean
 clean:

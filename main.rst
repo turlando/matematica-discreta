@@ -282,10 +282,13 @@ Coefficiente binomiale
 Combinazione
     Lorem ipsum
 
-Formula di Stifel
+Relazione di Stiefel
     Lorem ipsum
 
 Numeri di Bell
+    Lorem ipsum
+
+Binomio di Newton
     Lorem ipsum
 
 Principipo di induzione
