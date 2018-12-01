@@ -5,10 +5,13 @@ Dipendenze
 ----------
 
 * Su Debian/Ubuntu
+
   * ``pandoc``
   * ``texlive``
   * ``texlive-latex-extra``
+
 * Su ArchLinux
+
   * ``pandoc``
   * ``texlive-core``
   * ``texlive-latexextra``
