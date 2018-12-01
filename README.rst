@@ -7,12 +7,14 @@ Dipendenze
 * Su Debian/Ubuntu
 
   * ``pandoc``
+  * ``make``
   * ``texlive``
   * ``texlive-latex-extra``
 
 * Su ArchLinux
 
   * ``pandoc``
+  * ``make``
   * ``texlive-core``
   * ``texlive-latexextra``
   * ``texlive-fontsextra``
