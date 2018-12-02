@@ -26,11 +26,13 @@ Notazione logica
     * Congiunzione (:math:`\land`)
     * Disgiunzione (:math:`\lor`)
 
-Enunciazione
+Denotazione
     Gli insiemi si possono dichiarare o descrivere mediante:
 
-    * Elencazione (:math:`A = \{a, b, c\}`)
-    * Proprietà caratteristica (:math:`A = \{n \in N : 0 \leq n \leq 5\}`)
+    * Elencazione
+      * Per insiemi finiti: :math:`A = \{a, b, c\}`
+      * Per insiemi infiniti: :math:`B = \{0, 1, 2, \dots, n, \dots\}`
+    * Proprietà caratteristica: :math:`A = \{n \in \mathbb{N} : 0 \leq n \leq 5\}`
     * Diagramma di Venn
 
 Appartenenza (:math:`\in` e :math:`\notin`)
@@ -53,12 +55,16 @@ Insieme continuo
     .. math::
        \forall x, y \in A \; \implies \; \exists z \in A : x < z < y
 
+    Un insieme continuo contiene un numero infinito di elementi.
+
 Insieme discreto
     È un insieme non continuo. Tutti gli insiemi finiti sono discreti.
 
+----------
+
 Esempi di insiemi:
 
-* :math:`A = \{x \in N : 1 \leq x \leq 10\} = \{1, 2, 3, \dots, 10\}`
+* :math:`A = \{x \in \mathbb{N} : 1 \leq x \leq 10\} = \{1, 2, 3, \dots, 10\}`
   (insieme dei numeri naturali compresi tra uno e dieci estremi inclusi)
 * :math:`B = \{2n : n \in N\} = \{0, 2, 4, 6, \dots, 2n, \dots\}`
   (insieme dei numeri naturali pari)
@@ -72,9 +78,11 @@ Esempi di insiemi:
   (insieme delle potenze di numeri naturali)
 * :math:`G = \{n^2 : n \in Z\} = \{0, 1, 4, 9, , 16, \dots, n^2, \dots\} = F`
   (insieme delle potenze di numeri interi, uguale a :math:`F`)
-* :math:`Q = \{\frac{m}{n} : m, n \in Z, n \neq 0\}
+* :math:`\mathbb{Q} = \{\frac{m}{n} : m, n \in Z, n \neq 0\}
   = \{0, 1, 4, 9, , 16, \dots, n^2, \dots\} = F`
   (insieme dei numeri razionali)
+
+----------
 
 Sottoinsieme
     Si dice che X è sottoinsieme di A se si verifica uno dei seguenti casi:
@@ -88,7 +96,7 @@ Sottoinsieme
       :math:`X \subset A \iff \forall x \in X \implies x \in A
       \; \land \; \exists y \in A : y \notin X`
 
-    Ogni sottoinsieme :math:`A` ha due sottoinsiemi **impropri**, che sono
+    Ogni sottoinsieme :math:`A` ha due sottoinsiemi **impropri**: l'insieme
     :math:`\varnothing` e l'insieme :math:`A` stesso. Tutti gli altri
     sottoinsiemi si dicono **propri**.
 
@@ -106,11 +114,11 @@ Confronto
     * :math:`A \subset B`
     * :math:`B \subset A`
 
+----------
+
 Esempi sul confronto di insiemi:
 
-* :math:`N \subset Z \subset Q` quindi :math:`N, Z, Q` sono confrontabili
 * :math:`A = \{a, 2, 3\}, \; B = \{1, a, b\}, \; C = \{1, 2\}, \; D = \{a, b\}`
-
   * :math:`A \neq B, \: A \not\subset B, \: B \not\subset A`
     quindi :math:`A, B` non sono confrontabili
   * :math:`A \neq C, \: A \not\subset C, \: C \subset A`
@@ -119,6 +127,9 @@ Esempi sul confronto di insiemi:
     quindi :math:`B, D` sono confrontabili
   * :math:`C \neq D, \: C \not\subset D, \: D \not\subset C`
     quindi :math:`C, D` non sono confrontabili
+* :math:`\mathbb{N} \subset \mathbb{Z} \subset Q` quindi :math:`N, Z, Q` sono confrontabili
+
+----------
 
 Cardinalià o potenza
     È il numero di elementi di un insieme e si indica con :math:`|A|`.
@@ -143,20 +154,14 @@ Cardinalià o potenza
     :math:`A \subset B \iff |A| \neq |B|`.
     Non vale per insiemi infiniti. Ecco un esempio:
 
-      | :math:`N = \{0, 1, 2, 3, \dots, n, \dots\}`
+      | :math:`\mathbb{N} = \{0, 1, 2, 3, \dots, n, \dots\}`
       | :math:`A = \{0, 2, 4, 6, \dots, 2n, \dots\}`
       | :math:`A \subset N`
 
       Dato che si può stabilire una relazione biunivoca tra gli elementi di
       :math:`A, B` (cioè che per ogni elemento presente in :math:`A` ne
       esiste uno in :math:`B` e viceversa), si può dire che
-      :math:`|A| = |N| = \aleph_{0}`.
-
-Esempi:
-
-* Insiemi equipotenti sono numerabili?
-
-   :math:`A = \{1, 2, 3\}, \; B = \{4, 5, 6\}`
+      :math:`|A| = |\mathbb{N}| = \aleph_{0}`.
 
 Insieme numerabile
     Un insieme A si dice numerabile se si verifica uno dei seguenti casi:
@@ -166,6 +171,16 @@ Insieme numerabile
       oppure se gli elementi di :math:`A` possono essere messi in corrispondenza
       biunivoca con gli elementi di :math:`\mathbb{N}`.
 
+----------
+
+Esempi:
+
+* Insiemi equipotenti sono numerabili?
+
+   :math:`A = \{1, 2, 3\}, \; B = \{4, 5, 6\}`
+
+----------
+
 Insieme delle parti
     Dato un insieme :math:`A` si indica con :math:`\mathcal{P}(A)` il proprio
     insieme delle parti ed è l'insieme di tutti i possibili sottoinsiemi di
@@ -173,6 +188,8 @@ Insieme delle parti
 
     * :math:`\mathcal{P}(A) = \{X : X \subseteq A\}`
     * :math:`X \subseteq A \iff X \in \mathcal{P}(A)`
+
+----------
 
 Esempi di insieme delle parti:
 
@@ -189,6 +206,8 @@ Esempi di insieme delle parti:
     \{1\}, \{2\}, \{3\}, \{1, 2\}, \{1, 3\}, \{2, 3\}\}`
   | Quindi :math:`|A| = 2`, ma :math:`|\mathcal{P}(A)| = 4`.
 
+----------
+
 Primo teorema di Cantor
     :math:`|\mathcal{P}(A)| = 2^{|A|}, \forall A`
 
@@ -196,21 +215,23 @@ Primo teorema di Cantor
       | :math:`|A| = k`
       | :math:`|\mathcal{P}(A)| = 2^{|A|} = 2^{k}`.
     * | Se :math:`A` è infinito e numerabile allora
-      | :math:`|A| = |N| = \aleph_{0}`,
+      | :math:`|A| = |\mathbb{N}| = \aleph_{0}`,
       | :math:`|\mathcal{P}(A)| = 2^{|A|}
-        = 2^{\aleph_{0}} = \aleph_{1} = c = |R|`.
+        = 2^{\aleph_{0}} = \aleph_{1} = c = |\mathbb{R}|`.
 
 Secondo teorema di Cantor
     :math:`|A| < |\mathcal{P}(A)|`
 
-    * | Se :math:`A` è finito allora :math:`|A| = k,`
-      | :math:`|A| < |\mathcal{P}(A)| = 2^{|A|}`,
+    * | Se :math:`A` è finito allora
+      | :math:`|A| < |\mathcal{P}(A)|`
+      | :math:`|A| < 2^{|A|}`,
       | quindi :math:`n < 2^{n}, \forall k \in N`.
-    * | Se :math:`A` è infinito allora :math:`|A| = |N| = \aleph_{0}`,
-      | :math:`\aleph_{0} < 2^{\aleph_{0}} = |\mathcal{P}(A)| = \aleph_{1} = c = |R|`.
+    * | Se :math:`A` è infinito allora :math:`|A| = |\mathbb{N}| = \aleph_{0}`,
+      | :math:`\aleph_{0} < 2^{\aleph_{0}} = |\mathcal{P}(A)|
+        = \aleph_{1} = c = |\mathbb{R}|`.
 
     .. math::
-      |N| & < & |\mathcal{P}(N)| & < & |\mathcal{P}(\mathcal{P}(N))|
+      |\mathbb{N}| & < & |\mathcal{P}(N)| & < & |\mathcal{P}(\mathcal{P}(N))|
       & < & |\mathcal{P}(\mathcal{P}(\mathcal{P}(N)))| & < & \dots \\
       \aleph_{0} & < & 2^{\aleph_{0}} = \aleph_{1} & < & 2^{\aleph_{1}} = \aleph_{2}
       & < & 2^{\aleph_{2}} = \aleph_{3} & < & \dots
