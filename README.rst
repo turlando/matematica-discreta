@@ -10,6 +10,7 @@ Dipendenze
   * ``make``
   * ``texlive``
   * ``texlive-latex-extra``
+  * ``texlive-lang-italian``
 
 * Su ArchLinux
 
