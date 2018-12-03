@@ -119,14 +119,14 @@ Confronto
 Esempi sul confronto di insiemi:
 
 * :math:`A = \{a, 2, 3\}, \; B = \{1, a, b\}, \; C = \{1, 2\}, \; D = \{a, b\}`
-  * :math:`A \neq B, \: A \not\subset B, \: B \not\subset A`
-    quindi :math:`A, B` non sono confrontabili
-  * :math:`A \neq C, \: A \not\subset C, \: C \subset A`
-    quindi :math:`A, C` sono confrontabili
-  * :math:`B \neq D, \: B \not\subset D, \: D \subset B`
-    quindi :math:`B, D` sono confrontabili
-  * :math:`C \neq D, \: C \not\subset D, \: D \not\subset C`
-    quindi :math:`C, D` non sono confrontabili
+    * :math:`A \neq B, \: A \not\subset B, \: B \not\subset A`
+      quindi :math:`A, B` non sono confrontabili
+    * :math:`A \neq C, \: A \not\subset C, \: C \subset A`
+      quindi :math:`A, C` sono confrontabili
+    * :math:`B \neq D, \: B \not\subset D, \: D \subset B`
+      quindi :math:`B, D` sono confrontabili
+    * :math:`C \neq D, \: C \not\subset D, \: D \not\subset C`
+      quindi :math:`C, D` non sono confrontabili
 * :math:`\mathbb{N} \subset \mathbb{Z} \subset Q` quindi :math:`N, Z, Q` sono confrontabili
 
 ----------
@@ -170,6 +170,8 @@ Insieme numerabile
     * Se :math:`A` è infinito allora :math:`A \subseteq N, \; |A| = \aleph_{0}`
       oppure se gli elementi di :math:`A` possono essere messi in corrispondenza
       biunivoca con gli elementi di :math:`\mathbb{N}`.
+
+      Più generalmente, deve essere equipotente a \mathbb{N}.
 
 ----------
 
@@ -226,7 +228,8 @@ Secondo teorema di Cantor
       | :math:`|A| < |\mathcal{P}(A)|`
       | :math:`|A| < 2^{|A|}`,
       | quindi :math:`n < 2^{n}, \forall k \in N`.
-    * | Se :math:`A` è infinito allora :math:`|A| = |\mathbb{N}| = \aleph_{0}`,
+    * | Se :math:`A` è infinito, per esempio :math:`A = \mathbb{N}`, allora
+      | :math:`|A| = |\mathbb{N}| = \aleph_{0}`,
       | :math:`\aleph_{0} < 2^{\aleph_{0}} = |\mathcal{P}(A)|
         = \aleph_{1} = c = |\mathbb{R}|`.
 
@@ -244,14 +247,17 @@ Operazioni tra insiemi
 Prodotto cartesiano
     Lorem ipsum
 
-Relazione
-    Lorem ipsum
-
 Notazioni compatte
     Lorem ipsum
 
 Principio di inclusione-esclusione
     Lorem ipsum
+
+Famiglia di insiemi
+    Si dice che :math:`F = \{A_{i}\}_{i \in I}` è una famiglia di insiemi,
+    cioè un insieme i cui elementi sono insiemi.
+
+    :math:`I` è l'insieme degli indici e :math:`i` è un suo elemento.
 
 Partizione di un insieme
     È una famiglia :math:`F` di sottoinsiemi di A.
@@ -268,6 +274,8 @@ Partizione di un insieme
 
     Le partizioni di un insieme sono tante quante le possibili relazioni di
     equivalenza che si possono definire sull'insieme.
+
+----------
 
 Esempi sulla partizione di insiemi:
 
@@ -288,6 +296,42 @@ Esempi sulla partizione di insiemi:
    * :math:`A_{1} \cup A_{2} = P \cup D = N`
 
    Quindi :math:`F` è una partizione.
+
+----------
+
+Relazioni
+---------
+
+Relazione
+    Una relazione :math:`R` tra due insiemi :math:`A, B` è un sottoinsieme del
+    prodotto cartesiano :math:`A \times B = {(a, b) : a \in A, b \in B}`.
+
+    Se :math:`(a, b) \in R` allora si dice che :math:`A` è in relazione con
+    :math:`B` o :math:`a R b`.
+
+Proprietà riflessiva
+    :math:`\forall a \in A, a R a`
+
+Proprietà simmetrica
+    :math:`\forall a, b \in A : a R b \implies b R a`
+
+Proprietà transitiva
+    :math:`\forall a, b, c : a R b \, \land \, b R c \implies a R c`
+
+Relazione di equivalenza
+    È una relazione che gode delle proprietà riflessiva, simmetrica
+    e transitiva.
+
+    Una relazione di equivalenza su un insieme :math:`A` suddivide lo stesso
+    insieme in sottoinsiemi che formano una partizione di :math:`A`. Tali
+    partizioni sono elementi dell'insieme quoziente di A su R che si indica
+    con :math:`\frac{A}{R}`.
+
+Relazione di uguaglianza
+    È una relazione di equivalenza del tipo :math:`a R a`.
+
+Classe di equivalenza
+    Lorem ipsum
 
 Calcolo combinatorio
 --------------------
