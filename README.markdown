@@ -24,4 +24,3 @@
 * `make main.html` genera un file html
 * `make all` (o `make`) genera entrambi
 * `make clean` rimuove i file generati
-* `make lint` esegue il linter

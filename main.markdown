@@ -1,6 +1,4 @@
-# Matematica Discreta
-
-## Insiemistica
+# Insiemistica
 
 Insieme
 :   È una raccolta di oggetti ben definiti che costituiscono gli elementi
@@ -315,7 +313,7 @@ Esempi sulla partizione di insiemi:
 
 ----------
 
-## Relazioni
+# Relazioni
 
 Relazione
 :   Una relazione $R$ tra due insiemi $A, B$ è un sottoinsieme del
@@ -348,7 +346,7 @@ Relazione di uguaglianza
 Classe di equivalenza
 :   Lorem ipsum
 
-## Calcolo combinatorio
+# Calcolo combinatorio
 
 Fattoriale
 :   Si indica con $n!$ ed è il prodotto di tutti i numeri naturali
@@ -378,11 +376,11 @@ Numeri di Bell
 Binomio di Newton
 :   Lorem ipsum
 
-## Principipo di induzione
+# Principipo di induzione
 
 Lorem ipsum.
 
-## Aritmetica modulare
+# Aritmetica modulare
 
 Relazione di congruenza
 :   Mentre l'aritmetica “tradizionale” si usa il simbolo di uguaglianza

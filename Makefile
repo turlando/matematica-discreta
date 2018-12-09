@@ -3,30 +3,20 @@ PANDOC?=pandoc
 .PHONY: all
 all: main.pdf main.html
 
-main.tex: main.markdown
+main.pdf: main.markdown meta.yaml
 	$(PANDOC)\
 	    --standalone\
+	    --metadata-file=meta.yaml\
 	    --toc\
 	    --number-sections\
-	    --variable documentclass:memoir\
-	    --variable papersize:a4\
-	    --variable lang:it\
+	    --variable=documentclass:memoir\
+	    --variable=papersize:a4\
 	    -o $@ $<
 
-main.pdf: main.markdown
-	$(PANDOC)\
-	    --from=markdown\
-	    --standalone\
-	    --toc\
-	    --number-sections\
-	    --variable documentclass:memoir\
-	    --variable papersize:a4\
-	    --variable lang:it\
-	    -o $@ $<
-
-main.html: main.markdown
+main.html: main.markdown meta.yaml
 	$(PANDOC)\
 	    --standalone\
+	    --metadata-file=meta.yaml\
 	    --to=html5\
 	    --section-divs\
 	    --toc\
