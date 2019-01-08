@@ -1,4 +1,5 @@
 PANDOC?=pandoc
+MDL?=mdl
 
 .PHONY: all
 all: main.pdf main.html
@@ -27,3 +28,9 @@ main.html: main.markdown meta.yaml
 clean:
 	rm -f main.pdf
 	rm -f main.html
+
+.PHONY: lint
+lint: main.markdown
+	$(MDL)\
+	    --rules ~MD025,~MD007\
+	    $<

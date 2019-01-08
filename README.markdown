@@ -18,9 +18,13 @@
   * `texlive-latexextra`
   * `texlive-fontsextra`
 
+Opzionalmente si può installare il Gem Ruby `mdl` per eseguire il lint
+del documento Markdown.
+
 ## Compilazione
 
 * `make main.pdf` genera un file pdf
 * `make main.html` genera un file html
 * `make all` (o `make`) genera entrambi
 * `make clean` rimuove i file generati
+* `m̀ake lint` esegue il lint del sorgente
