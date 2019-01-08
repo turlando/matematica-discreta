@@ -27,4 +27,4 @@ del documento Markdown.
 * `make main.html` genera un file html
 * `make all` (o `make`) genera entrambi
 * `make clean` rimuove i file generati
-* `m̀ake lint` esegue il lint del sorgente
+* `make lint` esegue il lint del sorgente
