@@ -365,21 +365,79 @@ Coefficiente binomiale
     * $0 \leq k \leq n \iff \binom{n}{k} = \frac{n!}{k!(n - k)!}$
 
 Combinazione
-:   Lorem ipsum
+:   | È il numero dei sottoinsiemi con $k$ elementi di un insieme di
+      $n$ elementi. Si esprime come:
+    | $C_{(n,k)} = \binom{n}{k} = \frac{n!}{k!(n - k)!}$ 
 
-Relazione di Stiefel
-:   Lorem ipsum
+Formula di Stiefel
+:   | È una relazione fondamentale tra coefficienti binomiali:
+    | $\binom{n}{k} = \binom{n - 1}{k - 1} + \binom{n - 1}{k}$ con $1 \leq k \leq n$
+    | Caso particolare: $2^{n} = \sum\limits_{k=0}^{n}\binom{n}{k}$
+                
 
 Numeri di Bell
-:   Lorem ipsum
+:   | Sono una serie di numeri definibili attraverso 
+      il seguente algoritmo ricorsivo.
+    | $B_n = \sum\limits_{k=0}^{n-1}\binom{n-1}{k}B_k$ con $B_0 = B_1 = 1$                            
+    | Il numero di Bell $B_n$ conta tutte le partizioni di un insieme con $n$
+      elementi, e ad ogni partizione corrisponde una relazione di equivalenza
+      definita sull'insieme stesso e viceversa.
 
 Binomio di Newton
+:   | Il Binomio di Newton è una formula che permette lo sviluppo di una
+      potenza di un qualsiasi binomio.
+      Può essere sviluppato attraverso la formula di Newton:
+    | $(a + b)^n = \sum\limits_{k=0}^{+\infty} \binom{n}{k} a^{n-k}b^k$
+
+    | Per esempio:
+    | $(a + b)^3 = \binom{3}{0} a^{3-0}b^{3-3} + \binom{3}{1} a^{3-1}b + 
+      \binom{3}{2} a^{3-2}b^{2} + \binom{3}{3} a^{3-3}b^{3} = a^{3}+3a^{2}b
+      + 3ab^{3} + b^{3}$
+
+Triangolo di Tartaglia
 :   Lorem ipsum
 
-# Principipo di induzione
+# Principio di induzione
+Il principio di induzione è una tecnica di dimostrazione che consente di
+dimostrare la validità di una proposizione verificando la validità
+del passo zero e la validità del passo induttivo.
 
-Lorem ipsum.
-
+Procedimento induttivo
+:    Per dimostrare quindi una proposizione matematica utilizzando il
+     principio di induzione occorre dimostrare la proposizione nel
+     passo zero e nel passo induttivo.
+    
+     Sia $p(n)$ una proposizione matematica dipendente da $n\in N$,
+     per dimostrarne la sua validità con il principio di induzione:
+    
+    * Passo zero: verificare la validità di $p(0)$
+    * Passo induttivo: supponendo verificata $p(n)$, verificare $p(n+1)$
+    
+     Se entrambi i passi sono verificati, allora $p(n)$ sarà vera
+     $\forall x \in N$.
+  
+      ----------
+  
+     Esempio:
+     \newline
+     Sia $p(n): \sum\limits_{k=1}^{n} k = \frac{n(n + 1)}{2}$ 
+    
+     Verificare il passo zero e il passo induttivo per dimostrare la
+     validità di $p(n) \forall x \in N$.
+    
+    * Passo zero: $p(1): 1 = \frac{2}{2}=1$
+    * Passo induttivo: supposta $p(n)$ vera, si verifichi $p(n + 1)$.
+      \newline
+      $p(n + 1): \sum\limits_{k=0}^{n+1}k = \frac{(n + 1)(n + 2)}{2}$
+      
+      $\sum\limits_{k=0}^{n+1}k = \sum\limits_{k=0}^{n}k + (n + 1)
+             = p(n) + (n + 1)$
+      \newline
+      $\frac{n(n + 1)}{2} + (n + 1) = \frac{n^2 + 3n + 2}{2} = p(n + 1)$
+    
+     Essendo entrambi i passi verificati, allora $p(n)$ è verificata
+     $\forall x \in N$.
+      
 # Aritmetica modulare
 
 Relazione di congruenza
