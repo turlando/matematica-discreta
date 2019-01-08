@@ -28,6 +28,7 @@ Denotazione
     * Elencazione
 
       Si elencano gli elementi dell'insieme racchiudendoli tra parentesi graffe.
+
       * Per insiemi finiti: $A = \{a, b, c\}$
       * Per insiemi infiniti: $\mathbb{N} = \{0, 1, 2, \dots, n, \dots\}$
 
@@ -47,7 +48,7 @@ Appartenenza ($\in$ e $\notin$)
 :   Con $x \in A$ si indica che $x$ è un elemento dell'insieme
     $A$. Con $y \notin A$ si indica che $y$ non è un
     elemento dell'insieme $A$.
-    
+
     * $A = \{a, b, c\} \implies a, b, c \in A$
     * $A = \{a, b\} \implies c \notin A$
 
@@ -295,19 +296,19 @@ Esempi sulla partizione di insiemi:
 
 * Si determinino tutte le partizioni di $A = \{1, 2, 3\}$
 
-  * $F_{1} = \{1, 2, 3\}$
-  * $F_{2} = \{\{1\}, \{2\}, \{3\}\}$
-  * $F_{3} = \{\{1, 2\}, \{3\}\}$
-  * $F_{4} = \{\{1, 3\}, \{2\}\}$
-  * $F_{5} = \{\{2, 3\}, \{1\}\}$
+    * $F_{1} = \{1, 2, 3\}$
+    * $F_{2} = \{\{1\}, \{2\}, \{3\}\}$
+    * $F_{3} = \{\{1, 2\}, \{3\}\}$
+    * $F_{4} = \{\{1, 3\}, \{2\}\}$
+    * $F_{5} = \{\{2, 3\}, \{1\}\}$
 
 * Dati $P = \{2n : n \in N\}, \; D = \{2n + 1 : n \in N\}$,
   $F = \{P, D\}$ è una partizione di N?
 
-   * $A_{1} = P \neq \varnothing, \; A_{2} = D \neq \varnothing$
-   * $(i = 1 \in D) \neq (j = 2 \in P)
-     \implies A_{1} \cap A_{2} = P \cap D = \varnothing$
-   * $A_{1} \cup A_{2} = P \cup D = N$
+    * $A_{1} = P \neq \varnothing, \; A_{2} = D \neq \varnothing$
+    * $(i = 1 \in D) \neq (j = 2 \in P)
+      \implies A_{1} \cap A_{2} = P \cap D = \varnothing$
+    * $A_{1} \cup A_{2} = P \cup D = N$
 
    Quindi $F$ è una partizione.
 
@@ -367,21 +368,22 @@ Coefficiente binomiale
 Combinazione
 :   | È il numero dei sottoinsiemi con $k$ elementi di un insieme di
       $n$ elementi. Si esprime come:
-    | $C_{(n,k)} = \binom{n}{k} = \frac{n!}{k!(n - k)!}$ 
+    | $C_{(n,k)} = \binom{n}{k} = \frac{n!}{k!(n - k)!}$
 
 Formula di Stiefel
 :   | È una relazione fondamentale tra coefficienti binomiali:
-    | $\binom{n}{k} = \binom{n - 1}{k - 1} + \binom{n - 1}{k}$ con $1 \leq k \leq n$
+    | $\binom{n}{k} = \binom{n - 1}{k - 1} + \binom{n - 1}{k}$
+      con $1 \leq k \leq n$
     | Caso particolare: $2^{n} = \sum\limits_{k=0}^{n}\binom{n}{k}$
-                
 
 Numeri di Bell
-:   | Sono una serie di numeri definibili attraverso 
-      il seguente algoritmo ricorsivo.
-    | $B_n = \sum\limits_{k=0}^{n-1}\binom{n-1}{k}B_k$ con $B_0 = B_1 = 1$                            
-    | Il numero di Bell $B_n$ conta tutte le partizioni di un insieme con $n$
-      elementi, e ad ogni partizione corrisponde una relazione di equivalenza
-      definita sull'insieme stesso e viceversa.
+:   | Sono una serie di numeri definibili attraverso il seguente
+      algoritmo ricorsivo:
+    | $B_n = \sum\limits_{k=0}^{n-1}\binom{n-1}{k}B_k$ con $B_0 = B_1 = 1$
+
+    Il numero di Bell $B_n$ conta tutte le partizioni di un insieme con $n$
+    elementi, e ad ogni partizione corrisponde una relazione di equivalenza
+    definita sull'insieme stesso e viceversa.
 
 Binomio di Newton
 :   | Il Binomio di Newton è una formula che permette lo sviluppo di una
@@ -390,7 +392,7 @@ Binomio di Newton
     | $(a + b)^n = \sum\limits_{k=0}^{+\infty} \binom{n}{k} a^{n-k}b^k$
 
     | Per esempio:
-    | $(a + b)^3 = \binom{3}{0} a^{3-0}b^{3-3} + \binom{3}{1} a^{3-1}b + 
+    | $(a + b)^3 = \binom{3}{0} a^{3-0}b^{3-3} + \binom{3}{1} a^{3-1}b +
       \binom{3}{2} a^{3-2}b^{2} + \binom{3}{3} a^{3-3}b^{3} = a^{3}+3a^{2}b
       + 3ab^{3} + b^{3}$
 
@@ -398,46 +400,46 @@ Triangolo di Tartaglia
 :   Lorem ipsum
 
 # Principio di induzione
+
 Il principio di induzione è una tecnica di dimostrazione che consente di
 dimostrare la validità di una proposizione verificando la validità
 del passo zero e la validità del passo induttivo.
 
 Procedimento induttivo
-:    Per dimostrare quindi una proposizione matematica utilizzando il
-     principio di induzione occorre dimostrare la proposizione nel
-     passo zero e nel passo induttivo.
-    
-     Sia $p(n)$ una proposizione matematica dipendente da $n\in N$,
-     per dimostrarne la sua validità con il principio di induzione:
-    
+:   Per dimostrare quindi una proposizione matematica utilizzando il
+    principio di induzione occorre dimostrare la proposizione nel
+    passo zero e nel passo induttivo.
+
+    Sia $p(n)$ una proposizione matematica dipendente da $n\in N$,
+    per dimostrarne la sua validità con il principio di induzione:
+
     * Passo zero: verificare la validità di $p(0)$
     * Passo induttivo: supponendo verificata $p(n)$, verificare $p(n+1)$
-    
-     Se entrambi i passi sono verificati, allora $p(n)$ sarà vera
-     $\forall x \in N$.
-  
-      ----------
-  
-     Esempio:
-     \newline
-     Sia $p(n): \sum\limits_{k=1}^{n} k = \frac{n(n + 1)}{2}$ 
-    
-     Verificare il passo zero e il passo induttivo per dimostrare la
-     validità di $p(n) \forall x \in N$.
-    
-    * Passo zero: $p(1): 1 = \frac{2}{2}=1$
-    * Passo induttivo: supposta $p(n)$ vera, si verifichi $p(n + 1)$.
-      \newline
-      $p(n + 1): \sum\limits_{k=0}^{n+1}k = \frac{(n + 1)(n + 2)}{2}$
-      
-      $\sum\limits_{k=0}^{n+1}k = \sum\limits_{k=0}^{n}k + (n + 1)
-             = p(n) + (n + 1)$
-      \newline
-      $\frac{n(n + 1)}{2} + (n + 1) = \frac{n^2 + 3n + 2}{2} = p(n + 1)$
-    
-     Essendo entrambi i passi verificati, allora $p(n)$ è verificata
-     $\forall x \in N$.
-      
+
+    Se entrambi i passi sono verificati, allora $p(n)$ sarà vera
+    $\forall x \in N$.
+
+----------
+
+Esempio:
+
+Sia $p(n): \sum\limits_{k=1}^{n} k = \frac{n(n + 1)}{2}$.
+
+* | Passo zero:
+  | $p(1):1 = \frac{2}{2}=1$
+* | Passo induttivo:
+  | supposta $p(n)$ vera, si verifichi $p(n + 1)$
+  | $p(n + 1): \sum\limits_{k=0}^{n+1}k = \frac{(n + 1)(n + 2)}{2} =$
+  | $= \sum\limits_{k=0}^{n+1}k
+    = \sum\limits_{k=0}^{n}k + (n + 1) =$
+  | $= p(n) + (n + 1) \frac{n(n + 1)}{2} + (n + 1) =$
+  | $= \frac{n^2 + 3n + 2}{2} = p(n + 1)$
+
+Essendo entrambi i passi verificati, allora $p(n)$ è verificata
+$\forall x \in N$.
+
+----------
+
 # Aritmetica modulare
 
 Relazione di congruenza
